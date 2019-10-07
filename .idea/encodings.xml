@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/compliments.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/presents.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/roof.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/routines.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/assets/scenario.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/data/openers.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/openers.txt" charset="windows-1251" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/values/openers.txt" charset="windows-1251" />
+  </component>
+</project>

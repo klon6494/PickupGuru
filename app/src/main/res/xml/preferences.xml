@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <SwitchPreferenceCompat
+            android:id="@+id/nightPreference"
+            android:defaultValue="false"
+            app:key="night"
+            app:title="Ночной режим" />
+
+        <SwitchPreferenceCompat
+            android:id="@+id/audioPreference"
+            android:defaultValue="true"
+            app:key="sound"
+            app:title="Звуки" />
+
+        <SwitchPreferenceCompat
+            android:id="@+id/animationPreference"
+            android:defaultValue="true"
+            app:key="animation"
+            app:title="Анимация" />
+
+</PreferenceScreen>

@@ -1,0 +1,42 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Light base activity theme -->
+    <style name="ActivityTheme.Primary.Base.Light" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="primaryTextColor">#F4F4F6</item>
+        <item name="secondaryTextColor">#96F4F4F6</item>
+        <item name="backgroundCardColor">#FFFF</item>
+        <item name="dividerColor">#F2F2F3</item>
+    </style>
+    <!-- Dark base activity theme -->
+    <style name="ActivityTheme.Primary.Base.Dark"    parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="primaryTextColor">#33343B</item>
+        <item name="secondaryTextColor">#8033343B</item>
+        <item name="backgroundCardColor">#28292e</item>
+        <item name="dividerColor">#F2F2F3</item>
+    </style>
+
+    <!-- Specific Feed activity theme -->
+    <style name="FeedActivityThemeLight" parent="ActivityTheme.Primary.Base.Light">
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="android:textColorPrimary">#33343B</item>
+        <item name="android:textColorSecondary">#8033343B</item>
+        <item name="android:textColorTertiary">#28292e</item>
+    </style>
+    <style name="FeedActivityThemeDark" parent="ActivityTheme.Primary.Base.Dark">
+        <item name="android:windowBackground">#33343B</item>
+        <item name="android:textColorPrimary">#F2F2F3</item>
+        <item name="android:textColorSecondary">#F2F2F3</item>
+        <item name="android:textColorTertiary">#F2F2F3</item>
+        <item name="android:background">#33343B</item>
+        <item name="android:textColor">#F2F2F3</item>
+    </style>
+
+</resources>
