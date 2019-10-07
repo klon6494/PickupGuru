@@ -7,14 +7,15 @@
     tools:context=".AllGeneratorActivity">
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        app:layout_constraintTop_toTopOf="parent">
 
         <ScrollView
             android:id="@+id/scrollView"
@@ -48,21 +49,41 @@
                     android:text="Тут будет текст"
                     android:textAlignment="center"
                     android:textSize="24sp" />
+
             </LinearLayout>
         </ScrollView>
+
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@android:color/darker_gray"/>
-        <Button
-            android:id="@+id/generateButton"
-            style="@style/Widget.AppCompat.Button.Borderless"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="0"
-            android:onClick="generate"
-            android:text="Обновить"
-            android:textSize="24sp" />
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/shareButton"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:drawableStart="@drawable/share"
+                android:onClick="onShare"
+                android:textSize="8sp" />
+
+            <Button
+                android:id="@+id/generateButton"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="generate"
+                android:text="Обновить"
+                android:textSize="24sp" />
+        </LinearLayout>
+
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

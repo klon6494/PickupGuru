@@ -27,6 +27,18 @@ public class AllGeneratorActivity extends AppCompatActivity {
 
     String[] finalList;
 
+    public void onShare(View v)
+    {
+        Intent sendIntent = new Intent();
+        sendIntent.setAction(Intent.ACTION_SEND);
+        String text = ((TextView)findViewById(R.id.textView)).getText().toString();
+        sendIntent.putExtra(Intent.EXTRA_TEXT, text);
+        sendIntent.setType("text/plain");
+
+        Intent shareIntent = Intent.createChooser(sendIntent, null);
+        startActivity(shareIntent);
+    }
+
     public void generate(View v)
     {
         Random rn = new Random();
